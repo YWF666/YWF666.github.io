@@ -347,8 +347,7 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>初入Github，第一件事情做的就是建立一个博客，这样以后也能记录自己今后技术学习历程。<br>使用HEXO+Github建立一个博客不需要什么代码基础，基本就是跟着网上的教程一步一步走，但是也会碰到教程缺少东西的情况，要同时看多份教程，比较其中的内容。<br>我参考了这几个教程<a href="http://chitanda.me/2015/06/11/tips-for-setup-hexo/" target="_blank" rel="noopener">“hexo博客搭建时遇到的一些问题”</a> <a href="https://www.cnblogs.com/visugar/p/6821777.html" target="_blank" rel="noopener">“从零开始到搭建完整”</a><a href="https://www.cnblogs.com/fengxiongZz/p/7707219.html" target="_blank" rel="noopener">使用Hexo+Github一步步搭建属于自己的博客（基础）</a><br>首先要安装配置环境，安装Node.js、Git环境、Hexo环境。</p>
-<p>先睡觉了，有空再写。</p>
+        <p>初入Github，第一件事情做的就是建立一个博客，这样以后也能记录自己今后技术学习历程。<br>使用HEXO+Github建立一个博客不需要什么代码基础，基本就是跟着网上的教程一步一步走，但是也会碰到教程缺少东西的情况，要同时看多份教程，比较其中的内容。<br>我参考了这几个教程<a href="http://chitanda.me/2015/06/11/tips-for-setup-hexo/" target="_blank" rel="noopener">“hexo博客搭建时遇到的一些问题”</a> <a href="https://www.cnblogs.com/visugar/p/6821777.html" target="_blank" rel="noopener">“从零开始到搭建完整”</a><a href="https://www.cnblogs.com/fengxiongZz/p/7707219.html" target="_blank" rel="noopener">使用Hexo+Github一步步搭建属于自己的博客（基础）</a><br>首先要安装配置环境，安装Node.js、Git环境、Hexo环境。<br>node.js是一个javascript的运行环境  java的运行环境不是JRE吗？这个有什么区别？<br>hexo是基于nodejs环境的静态博客<br>在blog文件夹下git bash here<br>安装hexo命令 npm i -g hexo<br>初始化hexo hexo init<br>在github中配置账户信息 git config –global user.name “ywf666” / git config – global user.email “<a href="mailto:ywfsdsg@gmail.com" target="_blank" rel="noopener">ywfsdsg@gmail.com</a>“<br>安装ssh，ssh-keygen -t rsa -C “<a href="mailto:ywfsdsg@gmail.com" target="_blank" rel="noopener">ywfsdsg@gmail.com</a>“ -f ~/.ssh/key 其中最后一个key是密钥名字，这时候就会在C：/Users/[Username]/.ssh下出现<br>获取SSH密钥 cd ~/.ssh       cat id_key.pub<br>把获得的SSH复制到github里<br>修改_config.yml的配置信息<br>deploy:<br>  type: git<br>  repo: <a href="https://github.com/YourgithubName/YourgithubName.github.io.git" target="_blank" rel="noopener">https://github.com/YourgithubName/YourgithubName.github.io.git</a><br>  branch: master<br>本地测试 hexo clean \ hexo generate \ hexo server 然后就能访问heep://localhost:4000查看了<br>上传github  hexo clean \ hexo generate \ hexo deploy 每次更新内容都要用<br>第一次deploy时要输入github的账号和密码</p>
 
     </article>
     <!-- 前后页  -->
@@ -509,14 +508,26 @@ top:50vh;
     
     
     
-    
-    
     <div class="total-archive"> Total : 3 </div>
     
     <div class="post-archive">
     
     
     
+    
+    <div class="archive-year"> Invalid date </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2018/04/20/hello-world/" >Hello World</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
     
     <div class="archive-year"> 2018 </div>
     <ul class="year-list">
@@ -529,20 +540,6 @@ top:50vh;
     
         <li class="archive-post-item">
             <span class="archive-post-date">04/21</span><a class="archive-post-title" href= "/2018/04/21/在Github上建立博客/" >在Github上建立博客</a>
-        </li>
-    
-    
-    
-    
-    
-        </ul>
-    
-    <div class="archive-year"> Invalid date </div>
-    <ul class="year-list">
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2018/04/20/hello-world/" >Hello World</a>
         </li>
     
     </div>
